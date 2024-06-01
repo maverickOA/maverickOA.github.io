@@ -40,5 +40,5 @@ By leveraging R, Excel, and Power BI, this project provides a detailed analysis 
 ## Resources
 
 - [R Scripts](#) (Add link to your R scripts here)
-- ![images/Visualization1.jpg]([#images/Visualization1.jpg](https://github.com/maverickOA/maverickOA.github.io/blob/f68048edd63f884f52afa4417ea5629db1e9a4a3/images/Visualization1.jpg)) (images/Visualization1.jpg)
+- ![images/Visualization1.jpg](#images/Visualization1.jpg)(https://github.com/maverickOA/maverickOA.github.io/blob/f68048edd63f884f52afa4417ea5629db1e9a4a3/images/Visualization1.jpg)
   
