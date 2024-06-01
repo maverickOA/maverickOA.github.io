@@ -40,5 +40,5 @@ By leveraging R, Excel, and Power BI, this project provides a detailed analysis 
 ## Resources
 
 - [R Scripts](#) (Add link to your R scripts here)
-- ![Visualization 1](#) (images/Visualization1.jpg)
+- ![Visualization 1](#images/Visualization1.jpg)
   
