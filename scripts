@@ -1,0 +1,32 @@
+# Load required libraries
+library(dplyr)
+library(tidyr)
+
+# Load the dataset
+titanic_data <- read.csv("titanic_data.csv", stringsAsFactors = FALSE)
+
+# Check for missing values
+missing_values <- colSums(is.na(titanic_data))
+print("Missing Values:")
+print(missing_values)
+
+# Handle missing values
+# Example: replacing missing age values with median age
+titanic_data$Age[is.na(titanic_data$Age)] <- median(titanic_data$Age, na.rm = TRUE)
+
+# Regularize data (Example: convert 'Sex' to factor)
+titanic_data$Sex <- as.factor(titanic_data$Sex)
+
+# Organize data for analysis
+# Example: create a new variable 'FamilySize' by combining 'SibSp' and 'Parch'
+titanic_data$FamilySize <- titanic_data$SibSp + titanic_data$Parch
+
+# Drop unnecessary columns
+# Example: dropping 'Name', 'Ticket', 'Cabin', 'SibSp', and 'Parch'
+titanic_data <- select(titanic_data, -c(Name, Ticket, Cabin, SibSp, Parch))
+
+# Save the cleaned and organized dataset
+write.csv(titanic_data, "cleaned_titanic_data.csv", row.names = FALSE)
+
+# Display the first few rows of the cleaned dataset
+head(titanic_data)
